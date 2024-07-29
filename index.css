@@ -73,8 +73,40 @@ footer {
   grid-template-rows: repeat(2, 1fr);
 }
 .pictograms-list__picture {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
   border-radius: 12px;
   z-index: -1;
+}
+
+.feedback__text {
+  margin-left: 10%;
+  display: inline-block;
+  min-width: 15.55vw;
+  border-radius: 8px;
+}
+.feedback__text__input {
+  min-width: 100%;
+  background-color: #262731;
+  border: none;
+  outline: none;
+  color: white;
+  font-family: "FiraSans";
+}
+
+.msg {
+  display: block;
+  margin-right: 10%;
+  margin-top: 2%;
+  min-width: 83.4%;
+  min-height: 10%;
+}
+
+.consent {
+  background-color: #262731;
+  margin-top: 2%;
+  margin-left: 10%;
 }
 
 @font-face {
