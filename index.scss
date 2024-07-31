@@ -93,9 +93,13 @@ footer{
     min-height: 10%;
 }
 .consent {
-    background-color: #262731;
+    z-index: -1;
+    opacity: 0;
     margin-top: 2%;
     margin-left: 10%;
+    &__checkbox{
+        font-size: 18px;
+    }
 }
 @font-face {
     font-family: FiraSans;
