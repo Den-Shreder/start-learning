@@ -1,53 +1,60 @@
 <html>
     <link href="index.css", rel="stylesheet"/>
     <header>
-        <section class="upline">
-            <img src="cyberia.svg", class="picture">
-            <p>Агенство</p>
-            <p>Услуги</p>
-            <p>Кейсы</p>
-            <p>Блог</p>
-            <p>Контакты</p> 
-        </section>
+        <div class="container">
+            
+            <section class="upline">
+                <img src="cyberia.svg", class="picture">
+                <nav>Агенство</nav>
+                <nav>Услуги</nav>
+                <nav>Кейсы</nav>
+                <nav>Блог</nav>
+                <nav>Контакты</nav> 
+                <nav class="upline__active"></nav>
+            </section>
+        </div>
     </header>
     <body>
-        <p class="subtitle">Главная / Кейсы</p>
-        <h1 class="title">Кейсы</h1>
-        <section class="buttons-list">
-            <button class="btn buttons-list__button">Продвижение</button>
-            <button class="btn buttons-list__button">Разработка</button>
-            <button class="btn buttons-list__button">Мобильные приложения</button>
-            <button class="btn buttons-list__button">Юзабилити - аудит</button>
-        </section>
-        <section class="pictograms-list">
-            <img class="pict pictograms-list__picture" src="image/vegitables.png">
-            <img class="pict pictograms-list__picture" src="image/interior.png">
-            <img class="pict pictograms-list__picture" src="image/room.png">
-            <img class="pict pictograms-list__picture" src="image/flower store.png">
-            <img class="pict pictograms-list__picture" src="image/Rectangle 121.png">
-            <img class="pict pictograms-list__picture" src="image/gazprom.png">
-        </section>
+        <div class="container">
+            <span class="subtitle">Главная / <div class="subtitle__case" >Кейсы</div></span>
+            <h1 class="title">Кейсы</h1>
+            <section class="buttons-list">
+                <button class="btn1 buttons-list__button">Продвижение</button>
+                <button class="btn2 buttons-list__button">Разработка</button>
+                <button class="btn3 buttons-list__button">Мобильные приложения</button>
+                <button class="btn4 buttons-list__button">Юзабилити - аудит</button>
+            </section>
+            <section class="pictograms-list">
+                <img class="pict pictograms-list__picture" src="image/vegitables.png">
+                <img class="pict pictograms-list__picture" src="image/interior.png">
+                <img class="pict pictograms-list__picture" src="image/room.png">
+                <img class="pict pictograms-list__picture" src="image/flower store.png">
+                <img class="pict pictograms-list__picture" src="image/Rectangle 121.png">
+                <img class="pict pictograms-list__picture" src="image/gazprom.png">
+            </section>
             <h1 class="title">Расскажите<br> о вашем проекте:</h1>
-        <section class="feedback"></section>
-            <fieldset class="txt feedback__text">
-                <legend>Ваше имя* </legend>
-                <input class="inp feedback__text__input" type="text">
-            </fieldset>
-            <fieldset class="txt feedback__text">
-                <legend>Email* </legend>
-                <input class="inp feedback__text__input" type="email">
-            </fieldset>
-            <fieldset class="txt feedback__text">
-                <legend>Телефон* </legend>
-                <input class="inp feedback__text__input" type="tel">
-            </fieldset>
-            <fieldset class="msg feedback__text">
+            <section class="feedback">
+                <fieldset class="txt feedback__text">
+                    <legend>Ваше имя* </legend>
+                    <input class="inp feedback__text__input" type="text">
+                </fieldset>
+                <fieldset class="txt feedback__text">
+                    <legend>Email* </legend>
+                    <input class="inp feedback__text__input" type="email">
+                </fieldset>
+                <fieldset class="txt feedback__text">
+                    <legend>Телефон* </legend>
+                    <input class="inp feedback__text__input" type="tel">
+                </fieldset>
+            </section>
+            <fieldset class="message">
                 <legend>Сообщение* </legend>
                 <input class="inp feedback__text__input" type="text">
             </fieldset>
             <input class="consent" type="checkbox" name="agree" id="agree">
-            <label class="consent__checkbox" for="agree"> Согласие на обработку персональных данных</label>
-        </section>
+            <label for="agree"> Согласие на обработку персональных данных</label>
+
+        </div>
     </body>
     <footer>
         

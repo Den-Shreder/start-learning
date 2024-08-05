@@ -1,110 +1,131 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    --body-backgorund: #262731;
+    --btn-footer-background: #313341;
+  }
+
+input {
+    background-color: var(--body-backgorund);
+    color: white;
+    border: none;
+    outline: none;
+    font-family: "FiraSans";
+    padding: 5px 10px;
+}
+
+fieldset {
+    background-color: var(--body-backgorund);
+    padding: 5px 10px;
+    border-radius: 8px;
+}
+
+.container {
+    --base-padding-x: max(18vw, 50px);
+  
+    margin: 0 auto;
+    padding: 0 var(--base-padding-x);
+  }
+
 header, body, footer{
     font-family: "FiraSans";
-    background-color: #262731;
-    width: 80%;
-    margin-left: auto;
-    margin-right: auto;
+    background-color: var(--body-backgorund);
     color: white;
+    font-size: 18px;
 }
+
+.picture {
+    margin-right: 5vw;
+}
+
+header {
+    height: max(12vh, 150px);
+    padding-top: max(6vh, 50px)
+}
+
 footer{
-    background-color: #313341;
+    background-color: var(--btn-footer-background) ;
 }
+
 .upline{
-    display: grid;
-    grid-template-columns: 350px 1fr 1fr 1fr 1fr 1fr 250px;
-    /* С расстояниями между надписями беда + все едет, если уменьшить размер окна */
-    P {
-        font-size: 18px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-content: center;
+    nav {
+        padding-top: 3px;
     }
+    &__active {
+        flex-grow: 0.3;
+    }
+    /* С расстояниями между надписями беда + все едет, если уменьшить размер окна */
 }
+
 .subtitle{
     color: rgba(255, 255, 255, 0.5);
-    margin-top: 3%;
-    margin-left: 10%;
     font-size: 18px;
-    /* Кейсы должны быть светлее */
+    &__case {
+        color: rgba(255, 255, 255, 0.7);
+        display: inline;
+    }
 }
+
 .title {
-    margin-left: 10%;
-    margin-top: 10%;
+    margin-top: max(12vh, 70px);
     font-family: "FiraSansBold";
     font-size: 48px;
 }
+
 .buttons-list {
-    margin-left: 10%;
-    margin-right: 4.5%;
-    margin-top: 3%;
-    display: grid;
-    grid-template-columns: 1fr 1fr 2fr 250px;
-    column-gap: 10%;
+    margin-top: max(7vh, 50px);
+    display: flex;
+    justify-content: space-between;
     &__button {
+        padding: 10px 30px;
         font-family: "FiraSans";
         color: white;
         font-size: 24px;
-        height: 2em;
-        background: #313341;
+        background: var(--btn-footer-background);
         border: 0;
         border-radius: 7px;
         box-shadow: 8px 15px 29px #171B2C69;
     }
 }
-.her {
-    padding: 10px;
-}
-.picture{
-    margin-top: 2.5%;
-}
+
 .pictograms-list {
-    margin-top: 4%;
-    margin-left: 10%;
-    row-gap: 4%;
+    margin-top: max(6vh, 50px);
+    gap: 25px;
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     grid-template-rows: repeat(2, 1fr);
     &__picture {
-        box-sizing: border-box;
-        margin: 0;
-        padding: 0;
         border-radius: 12px;
-        z-index: -1;
     }
 }
+
 .feedback {
-    &__text {
-        margin-left: 10%;
-        display: inline-block;
-        min-width: 15.55vw;
-        border-radius: 8px;
-        &__input {
-            min-width: 100%;
-            background-color: #262731;
-            border: none;
-            outline: none;
-            color: white;
-            font-family: "FiraSans";
-        }
-    }
+    margin-top: max(7vh, 70px);
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 55px;
+    margin-bottom: 15px;
 }
+
 .msg {
-    display: block;
-    margin-right: 10%;
-    margin-top: 2%;
-    min-width: 83.4%;
-    min-height: 10%;
+    min-width: 100%;
 }
+
 .consent {
-    z-index: -1;
-    opacity: 0;
+    background-color: var(--body-backgorund);
     margin-top: 2%;
-    margin-left: 10%;
-    &__checkbox{
-        font-size: 18px;
-    }
 }
+
 @font-face {
     font-family: FiraSans;
     src: url(fonts/firasanscondensed/FiraSansCondensed-Light.otf);
 }
+
 @font-face {
     font-family: FiraSansBold;
     src: url(fonts/firasanscondensed/FiraSansCondensed-Bold.otf);
