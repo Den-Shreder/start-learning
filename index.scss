@@ -3,7 +3,7 @@
     margin: 0;
     padding: 0;
     --body-backgorund: #262731;
-    --btn-footer-background: #313341;
+    --footer-background: #313341;
     --discuss-btn: #2D76F9;
   }
 
@@ -57,7 +57,8 @@ header {
 }
 
 footer{
-    background-color: var(--btn-footer-background) ;
+    background-color: var(--footer-background);
+    width: 100%;
 }
 
 .upline{
@@ -71,7 +72,6 @@ footer{
     &__active {
         flex-grow: 0.3;
     }
-    /* С расстояниями между надписями беда + все едет, если уменьшить размер окна */
 }
 
 .subtitle{
@@ -98,7 +98,7 @@ footer{
         font-family: "FiraSans";
         color: white;
         font-size: 24px;
-        background: var(--btn-footer-background);
+        background: var(--footer-background);
         border: 0;
         border-radius: 7px;
         box-shadow: 8px 15px 29px #171B2C69;
@@ -132,23 +132,45 @@ footer{
 .message {
     width: max(100%, 665px);
     height: 100px;
+    margin-bottom: 30px;
     .msg_inp {
         height: 100%;
     }
 }
 
 .consent {
-    display: none;
-}
-
-.consent-vissible {
-    display: inline-block;
     width: 25px;
     height: 25px;
-    border: 1.5px solid #EFF3FF;
-    margin-top: 30px;
-    // margin-bottom: 60px;
-    border-radius: 2px;
+}
+
+
+// .consent-vissible{
+//     display: inline-block;
+    // width: 25px;
+    // height: 25px;
+//     border: 1.5px solid #EFF3FF;
+//     border-radius: 2px;
+// }
+
+
+// .consent-vissible:hover{
+//     display: inline-block;
+//     width: 25px;
+//     height: 25px;
+//     border: 1.5px solid #EFF3FF;
+//     border-radius: 2px;
+//     background-color: red;
+// }
+
+
+.checkbox-align {
+    display: flex;
+    align-items: center;
+    margin-bottom: 50px;
+}
+
+.agree-text {
+    padding: 7px;
 }
 
 .discuss {
@@ -162,6 +184,28 @@ footer{
     border: 0;
     border-radius: 85px;
     width: 250px;
+    margin-bottom: 70px;
+}
+
+.about{
+    p {
+        margin-top: 35px;
+    }
+}
+
+.info {
+    display: grid;
+    padding: 100px 0px;
+    grid-template-columns: 150px 200px 100px 100px;
+    gap: 100px 200px;
+    width: 100%;
+}
+
+.navigation, .contact {
+    p, nav {
+        padding: 20px;
+        margin-top: -20px;
+    }
 }
 
 @font-face {
